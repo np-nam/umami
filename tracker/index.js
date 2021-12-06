@@ -109,7 +109,7 @@ import { removeTrailingSlash } from '../lib/url';
   /* Handle events */
 
   const addEvent = element => {
-    element.className.split(' ').forEach(className => {
+    element.classList.forEach(className => {
       if (!eventClass.test(className)) return;
 
       const [, type, value] = className.split('--');
